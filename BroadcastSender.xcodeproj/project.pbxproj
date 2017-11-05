@@ -13,6 +13,9 @@
 		633F45701FAFA79700E1F209 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 633F456F1FAFA79700E1F209 /* Assets.xcassets */; };
 		633F45731FAFA79700E1F209 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 633F45711FAFA79700E1F209 /* LaunchScreen.storyboard */; };
 		633F457E1FAFA79700E1F209 /* BroadcastSenderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633F457D1FAFA79700E1F209 /* BroadcastSenderTests.swift */; };
+		633F45891FAFA7E500E1F209 /* TestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633F45881FAFA7E500E1F209 /* TestCell.swift */; };
+		633F458B1FAFA7F200E1F209 /* BroadcastSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633F458A1FAFA7F200E1F209 /* BroadcastSender.swift */; };
+		633F458D1FAFA99C00E1F209 /* TestEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633F458C1FAFA99C00E1F209 /* TestEvent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		633F45791FAFA79700E1F209 /* BroadcastSenderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BroadcastSenderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		633F457D1FAFA79700E1F209 /* BroadcastSenderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadcastSenderTests.swift; sourceTree = "<group>"; };
 		633F457F1FAFA79700E1F209 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		633F45881FAFA7E500E1F209 /* TestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCell.swift; sourceTree = "<group>"; };
+		633F458A1FAFA7F200E1F209 /* BroadcastSender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BroadcastSender.swift; sourceTree = "<group>"; };
+		633F458C1FAFA99C00E1F209 /* TestEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestEvent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +83,11 @@
 		633F45671FAFA79700E1F209 /* BroadcastSender */ = {
 			isa = PBXGroup;
 			children = (
-				633F45681FAFA79700E1F209 /* AppDelegate.swift */,
 				633F456A1FAFA79700E1F209 /* ViewController.swift */,
 				633F456C1FAFA79700E1F209 /* Main.storyboard */,
-				633F456F1FAFA79700E1F209 /* Assets.xcassets */,
-				633F45711FAFA79700E1F209 /* LaunchScreen.storyboard */,
-				633F45741FAFA79700E1F209 /* Info.plist */,
+				633F45911FAFAA4100E1F209 /* Support Files */,
+				633F458F1FAFAA2200E1F209 /* TestSubject */,
+				633F458E1FAFAA1300E1F209 /* BroadcastSender */,
 			);
 			path = BroadcastSender;
 			sourceTree = "<group>";
@@ -94,6 +99,34 @@
 				633F457F1FAFA79700E1F209 /* Info.plist */,
 			);
 			path = BroadcastSenderTests;
+			sourceTree = "<group>";
+		};
+		633F458E1FAFAA1300E1F209 /* BroadcastSender */ = {
+			isa = PBXGroup;
+			children = (
+				633F458A1FAFA7F200E1F209 /* BroadcastSender.swift */,
+			);
+			path = BroadcastSender;
+			sourceTree = "<group>";
+		};
+		633F458F1FAFAA2200E1F209 /* TestSubject */ = {
+			isa = PBXGroup;
+			children = (
+				633F45881FAFA7E500E1F209 /* TestCell.swift */,
+				633F458C1FAFA99C00E1F209 /* TestEvent.swift */,
+			);
+			path = TestSubject;
+			sourceTree = "<group>";
+		};
+		633F45911FAFAA4100E1F209 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				633F45681FAFA79700E1F209 /* AppDelegate.swift */,
+				633F456F1FAFA79700E1F209 /* Assets.xcassets */,
+				633F45711FAFA79700E1F209 /* LaunchScreen.storyboard */,
+				633F45741FAFA79700E1F209 /* Info.plist */,
+			);
+			path = "Support Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,7 +232,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				633F458D1FAFA99C00E1F209 /* TestEvent.swift in Sources */,
+				633F458B1FAFA7F200E1F209 /* BroadcastSender.swift in Sources */,
 				633F456B1FAFA79700E1F209 /* ViewController.swift in Sources */,
+				633F45891FAFA7E500E1F209 /* TestCell.swift in Sources */,
 				633F45691FAFA79700E1F209 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

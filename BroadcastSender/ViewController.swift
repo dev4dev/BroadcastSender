@@ -8,18 +8,20 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UITableViewController {
 
-	override func viewDidLoad() {
-		super.viewDidLoad()
-		// Do any additional setup after loading the view, typically from a nib.
+	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+		return 10
 	}
 
-	override func didReceiveMemoryWarning() {
-		super.didReceiveMemoryWarning()
-		// Dispose of any resources that can be recreated.
+	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+		return tableView.dequeueReusableCell(withIdentifier: "TestCell", for: indexPath)
 	}
+}
 
-
+extension ViewController: TestCellActions {
+	func testCellButtonTapped(_ sender: TestCellActions, event: TestEvent) {
+		print("Tapped button in cell \(sender) - event \(event.name)")
+	}
 }
 
